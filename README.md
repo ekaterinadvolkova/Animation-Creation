@@ -17,4 +17,7 @@ This repository is created for practicing making different kinds of animations.
 | Duration              | 1 sec  | 1 sec | 2 sec  | 1 sec | 
 | Timing Function       | ````kCAMediaTiming```` <br> ````FunctionEaseOut````|  ````kCAMediaTiming```` <br> ````FunctionEaseIn````| ````kCAMediaTiming```` <br> ````FunctionEaseInEaseOut```` |````kCAMediaTiming````<br>````FunctionEaseInEaseOut```` |
 
+#### Result Screen
 
+
+<img src="https://media.github.bus.zalan.do/user/10996/files/b36ce798-5fbd-4df1-bef0-758ca07e5490" height = 415, width = 200> 
