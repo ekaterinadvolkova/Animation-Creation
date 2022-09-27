@@ -16,11 +16,14 @@ class CABasicAnimationController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let orangeTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(performCABasicAnimation))
+        let orangeTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tappedOrange))
         self.orangeView.addGestureRecognizer(orangeTapRecognizer)
+        
+        let cyanTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tappedCyan))
+        self.cyanView.addGestureRecognizer(cyanTapRecognizer)
     }
     
-    @IBAction func performCABasicAnimation(){
+    @IBAction func tappedOrange(){
         
         let animatableView = self.orangeView!
         let animation = CABasicAnimation(keyPath: #keyPath(CALayer.cornerRadius))
@@ -31,6 +34,18 @@ class CABasicAnimationController: UIViewController {
         
         animatableView.layer.add(animation, forKey: "cornerRadius")
         orangeView.layer.cornerRadius = orangeView.frame.height / 2
+        
+    }
+    
+    @IBAction func tappedCyan(){
+        let animatableView = self.cyanView!
+        let animation = CABasicAnimation(keyPath: #keyPath(CALayer.isHidden))
+        animation.duration = 1.0
+        animation.fromValue = false
+        animation.toValue = true
+        animation.timingFunction = CAMediaTimingFunction(name: .easeIn)
+        animatableView.layer.add(animation, forKey: "opacity")
+        cyanView.layer.isHidden = true
         
     }
     
