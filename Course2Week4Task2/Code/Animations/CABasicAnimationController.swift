@@ -44,13 +44,14 @@ class CABasicAnimationController: UIViewController {
     
     @IBAction func tappedCyan(){
         let animatableView = self.cyanView!
-        let animation = CABasicAnimation(keyPath: #keyPath(CALayer.isHidden))
+        let animation = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
         animation.duration = 1.0
-        animation.fromValue = false
-        animation.toValue = true
+        animation.fromValue = 1
+        let value: Float = 0.0
+        animation.toValue = value
         animation.timingFunction = CAMediaTimingFunction(name: .easeIn)
         animatableView.layer.add(animation, forKey: "opacity")
-        cyanView.layer.isHidden = true
+        animatableView.layer.opacity = value
     }
     
     @IBAction func tappedBlue(){
@@ -82,7 +83,6 @@ class CABasicAnimationController: UIViewController {
         moveAnimation.toValue = viewPosition
         
         let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
-        let scaleValue: CGFloat = 1.5
         scaleAnimation.fromValue = 1.0
         scaleAnimation.toValue = 1.5
         
