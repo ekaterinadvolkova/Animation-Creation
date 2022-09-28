@@ -15,6 +15,7 @@ class CAKeyframeAnimationController: UIViewController {
     @IBOutlet weak var startSinAnimationButton: UIButton!
     
     @IBAction func shakeAnimationTapHandler(sender: UIButton) {
+        self.animatePasscodeTextField()
     }
 
     @IBAction func sinAnimationTapHandler(sender: UIButton) {
@@ -42,5 +43,14 @@ extension CAKeyframeAnimationController {
         let width = self.view.bounds.width - 2 * startPoint.x
         let height = self.view.bounds.height / 6.0
         return CGPath.sinPath(startPoint: startPoint, width: width, height: height, periods: 1.5)
+    }
+    
+    private func animatePasscodeTextField(){
+        let animation = CAKeyframeAnimation(keyPath: "position.x")
+        animation.isAdditive = true
+        animation.values = [0, 10, -10, 10, -5, 5, -5, 0]
+        animation.keyTimes = [0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.8, 1]
+        animation.duration = 0.4
+        passcodeTextField.layer.add(animation, forKey: "shakePasscodeTextField")
     }
 }
