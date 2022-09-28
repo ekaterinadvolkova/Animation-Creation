@@ -15,7 +15,6 @@ This repository is created for practicing making different kinds of animations.
 
 #### Result Screen
 
-
 <img src="https://media.github.bus.zalan.do/user/10996/files/b36ce798-5fbd-4df1-bef0-758ca07e5490" height = 415, width = 200> 
 
 ### CAKeyFrameAnimation
@@ -28,3 +27,8 @@ This repository is created for practicing making different kinds of animations.
 * The animation must be infinite.
 * The duration of one animation cycle is 6 seconds. 
 * When moving along the sine wave, orangeView must rotate so that the ````x````-axis of ````orangeView```` is always parallel to the tangent at any point of the sine wave. 
+
+#### Result Screen
+
+<img src="https://user-images.githubusercontent.com/62830083/192880998-92f5fab9-6a59-4bf4-ac74-20706a05db5d.gif" height = 415, width = 200> 
+
