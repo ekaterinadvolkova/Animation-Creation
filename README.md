@@ -4,11 +4,7 @@ This repository is created for practicing making different kinds of animations.
 
 ### CABasicAnimation
 * ````CABasicAnimationController```` corresponds to the ````CABasicAnimation````
-* This controller has 4 UIView outlets of different colors: 
-  * orange
-  * cyan
-  * blue
-  * green
+* Outlets: ````orange````, ````cyan````, ````blue````, ````green````
 * A tap on each of these views triggers a different animation: 
   
 | Requirements / View   | ````orangeView````   | ````cyanView````  | ````blueView```` | ````greenView````  | 
@@ -21,3 +17,14 @@ This repository is created for practicing making different kinds of animations.
 
 
 <img src="https://media.github.bus.zalan.do/user/10996/files/b36ce798-5fbd-4df1-bef0-758ca07e5490" height = 415, width = 200> 
+
+### CAKeyFrameAnimation
+* Controller ````CAKeyframeAnimationController```` has two outlets: ````passcodeTextField```` and ````orangeView````
+* When you click the ````Start shake animation``` button, the ````passcodeTextField```` should play a shake animation that imitates an incorrect password entry. 
+* The ````passcodeTextField```` should be offset along the ````x````-axis with the following values: 0, 10, -10, 10, -5, 5, -5, 0. 
+* Time intervals for this animation: 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.8, 1. 
+* The total duration of the animation is 0.4 seconds.
+* When you click the ````Start```` sin animation button, the ````orangeView```` center should start moving along the sine wave that was previously drawn using the ````showSinPath()```` method.
+* The animation must be infinite.
+* The duration of one animation cycle is 6 seconds. 
+* When moving along the sine wave, orangeView must rotate so that the ````x````-axis of ````orangeView```` is always parallel to the tangent at any point of the sine wave. 
