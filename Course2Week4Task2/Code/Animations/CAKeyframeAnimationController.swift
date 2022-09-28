@@ -19,6 +19,7 @@ class CAKeyframeAnimationController: UIViewController {
     }
 
     @IBAction func sinAnimationTapHandler(sender: UIButton) {
+        self.animateOrgangeView()
     }
 
     // MARK: - Life cycle
@@ -52,5 +53,15 @@ extension CAKeyframeAnimationController {
         animation.keyTimes = [0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.8, 1]
         animation.duration = 0.4
         passcodeTextField.layer.add(animation, forKey: "shakePasscodeTextField")
+    }
+    
+    private func animateOrgangeView(){
+        let animation = CAKeyframeAnimation(keyPath: #keyPath(CALayer.position))
+        animation.path = self.sinPath()
+        animation.repeatCount = .infinity
+        animation.duration = 6.0
+        animation.calculationMode = .paced
+        animation.rotationMode = .rotateAuto
+        orangeView.layer.add(animation, forKey: "sinPath")
     }
 }
