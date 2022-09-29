@@ -17,16 +17,8 @@ This repository is created for practicing making different kinds of animations.
 
 
 ### CATransition
-* Controller ````CATransitionController```` has one textLabel outlet with the text "Initial text" in orange
-* The text "Initial Text" should be changed to "Sliding"
-* Transition type is ````kCATransitionMoveIn````
-* The colour is green
-* The duration is 1 sec
-* The timingFunction is ````kCAMediaTimingFunctionEaseOut````
-* At the end of this animation, the text should change animatedly to the original text
-* The transition type - ````kCATransitionFade````
-* The text color is orange
-* The animation duration is 1 sec
-* The timingFunction is ````kCAMediaTimingFunctionEaseOut````
 
+| Description   | Result Screen  | 
+| ------------- | -------------  | 
+| __1.__ Controller ````CATransitionController```` has one textLabel outlet with the text "Initial text" in orange.<br><br>__2.__ The text "Initial Text" should be changed to "Sliding".<br><br>__3.__ Transition type is ````kCATransitionMoveIn````.<br><br>__4.__ The colour is green.<br><br>__5.__ The duration is 1 sec<br><br>__6.__ The timingFunction is ````kCAMediaTimingFunctionEaseOut````.<br><br>__7.__ At the end of this animation, the text should change animatedly to the original text.<br><br>__8.__ The transition type - ````kCATransitionFade````.<br><br>__9.__ The text color is orange.<br><br>__10.__ The animation duration is 1 sec.<br><br>__11.__ The timingFunction is ````kCAMediaTimingFunctionEaseOut````.<br><br>| |
 
