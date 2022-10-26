@@ -16,6 +16,16 @@ This repository is created for practicing making different kinds of animations.
 | __1.__ Controller ````CAKeyframeAnimationController```` has two outlets: ````passcodeTextField```` <br> and ````orangeView````. <br><br> __2.__ When you click the ````Start shake animation```` button, the ````passcodeTextField```` <br> should play a shake animation that imitates an incorrect password entry. <br><br>__3.__ The ````passcodeTextField```` should be offset along the ````x````-axis with the following <br>  values: 0, 10, -10, 10, -5, 5, -5, 0. <br><br> __4.__ Time intervals for this animation: 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.8, 1.<br><br> __5.__ The total duration of the animation is 0.4 seconds.<br><br> __6.__ When you click the ````Start```` sin animation button, the ````orangeView```` center should <br> start moving along the sine wave that was previously drawn using the ````showSinPath()```` <br> method.<br><br> __7.__ The animation must be infinite.<br><br> __8.__ The duration of one animation cycle is 6 seconds. <br><br> __9.__ When moving along the sine wave, orangeView must rotate so that the <br> ````x````-axis of ````orangeView```` is always parallel to the tangent at any point of the sine wave. |  <img src="https://user-images.githubusercontent.com/62830083/192880998-92f5fab9-6a59-4bf4-ac74-20706a05db5d.gif" height = 415, width = 200> | 
 
 
+
+
+### UIKitDynamic Animation
+
+| Description   | Result Screen  | 
+| ------------- | -------------  | 
+| __1.__ The controller is ````UIKitDynamicController````.<br><br>__2.__ The controller has two outlets: ````anchorView```` and ````animationView````.<br><br>  __3.__ ````UIPanGestureRecognizer```` is added to the ````anchorView````.<br><br> __4.__  The ````animationView```` should move with free oscillation around the ````anchorView````. <br><br> __5.__ It should be possible to move the ````anchorView```` with your finger across the screen <br>while maintaining a free swing.|  <img src="https://media.github.bus.zalan.do/user/10996/files/a49dfde4-ba3a-4cf5-9831-0010b7baea35" height = 415, width = 200> | 
+
+
+
 ### CATransition
 
 | Description   | Result Screen  | 
